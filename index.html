@@ -5,13 +5,14 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
 </head>
 
 <body>
     <header class="header">
         <nav>
-            <a href="#">My Portfolio</a>
+            <a href="#home">My Portfolio</a>
             <div class="nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -25,8 +26,13 @@
     </header>
 
     <div class="container">
+        <section class="hero" id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a passionate web developer ready to take on new challenges.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </section>
         <section class="About">
-            <h2>About Me</h2>
+            <h2 id="about">About Me</h2>
             <div class="intro">
                 <div class="photo">
                     <img src="images/myphoto.jpg" alt="">
@@ -40,40 +46,39 @@
                     explore the possibilities together!</p>
             </div>
         </section>
-        <section><h2 id  = "h2">projects</h2></section>
-        
-        <section class="Projects">
-            <h2 class="name"></h2>
-            <div class="project1">
-                <div class="project_photo">
-                    <img src="images/Screenshot from 2023-09-08 00-22-18.png" alt="Project 1" class="proj1">
-                    <img src="/images/Screenshot from 2023-09-08 00-58-53.png" alt="" class="proj1">
-                    <img src="/images/Screenshot from 2023-09-08 00-58-17.png" alt="" class="proj1">
-                    <img src="/images/Screenshot from 2023-09-08 00-45-44.png" alt="" class="proj1">
 
+        <section class="Project">
+            <h2 class="name" id="projects">Projects</h2>
+            <div class="Projects">
+                <div class="project1">
+                    <div class="project_photo">
+                        <img src="images/Screenshot from 2023-09-08 00-22-18.png" alt="Project 1" class="proj1">
+                        <img src="/images/Screenshot from 2023-09-08 00-58-53.png" alt="" class="proj1">
+                        <img src="/images/Screenshot from 2023-09-08 00-58-17.png" alt="" class="proj1">
+                        <img src="/images/Screenshot from 2023-09-08 00-45-44.png" alt="" class="proj1">
+                    </div>
+                    <div>
+                        <h3>C++ project</h3>
+                        <p>simple airline reservation system</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>C++ project</h3>
-                    <p>simple airline reservation system</p>
-                </div>
-            </div>
-            <div class="project1">
-                <div class="project_photo">
-                    <img src="images/photo_2023-09-08_01-19-32.jpg" alt="" class="proj1">
-                    <img src="images/photo_2023-09-08_01-19-54.jpg" alt="" class="proj1">
-                    <img src="images/photo_2023-09-08_01-20-09.jpg" alt="" class="proj1">
-
-                    <img src="images/photo_2023-09-08_01-20-04.jpg" alt="Project 2" class="proj2">
-                </div>
-                <div>
-                    <h3>Ui/UX</h3>
-                    <p>Study Buddy</p>
+                <div class="project1">
+                    <div class="project_photo">
+                        <img src="images/photo_2023-09-08_01-19-32.jpg" alt="" class="proj1">
+                        <img src="images/photo_2023-09-08_01-19-54.jpg" alt="" class="proj1">
+                        <img src="images/photo_2023-09-08_01-20-09.jpg" alt="" class="proj1">
+                        <img src="images/photo_2023-09-08_01-20-04.jpg" alt="Project 2" class="proj2">
+                    </div>
+                    <div>
+                        <h3>Ui/UX</h3>
+                        <p>Study Buddy</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="skills">
-            <h2>Skills</h2>
+            <h2 id="skills">Skills</h2>
             <div class="skills fade-in">
                 <span>C</span>
                 <span>C++</span>
@@ -81,21 +86,43 @@
                 <span>Ui/UX Design</span>
             </div>
         </section>
-        <section:contact>
-            <h2>contact me</h2>
-            <div class="social"></div>
-            <div class="form">
-                <form action="">
-                    <input type="text" name="name" placeholder="Name"><br>
-                    <input type="email" name="Email" placeholder="your Email"><br>
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-
-                </form>
+        <section class="contact" id="contact">
+            <h2 id="contact">contact me</h2>
+            <div class="connect">
+                <div class="social">
+                    <h2>Talk to me</h2>
+                    <div class="email">adanemoges6@gmail.com
+                        <br>
+                        <a href="mailto:adanemoges6@gmail.com">write Me</a>
+                    </div>
+                    <div class="call">+251983763133
+                        <br>
+                        <a href="tel:+251983763133">Call Me</a>
+                    </div>
+                </div>
+                <div class="form">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Name"><br>
+                        <input type="email" name="Email" placeholder="your Email"><br>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
             </div>
-        </section:contact>
+        </section>
     </div>
     <footer>
         <p>&copy; 2023 Adane Moges</p>
+        <div class="social-icons">
+
+            <a href="https://www.linkedin.com/in/adane-moges/" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://t.me/Adman1994" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-telegram"></i></a>
+            <a href="https://github.com/habeshaethiopia" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-github"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+        </div>
     </footer>
 </body>
 
